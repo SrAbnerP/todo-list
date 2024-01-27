@@ -1,14 +1,15 @@
 body {
   font-family: Arial;
-  background-color: #292929;
+  font-size: 16px;
+  background-color: #121212;
   padding: 30px;
-  color: #333;
+  color: #ffffff;
 }
 
 .app {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #efefef;
+  background-color: #333;
   padding: 20px 30px;
   border-radius: 10px;
 }
@@ -30,11 +31,11 @@ input {
 }
 
 button {
-  background-color: #333974;
+  background-color: #3a7433;
   color: #fff;
   padding: 5px 10px;
   border: none;
-  border-radius: 3px;
+  border-radius: 6px;
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
@@ -53,13 +54,14 @@ button:hover {
 
 .todo {
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #272727;
 }
 
 .complete {
@@ -79,7 +81,7 @@ select {
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 8px;
   width: 100%;
 }
 
