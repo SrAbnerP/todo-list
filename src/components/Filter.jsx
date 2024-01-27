@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-const Filter = () => {
+const Filter = ({ filter, setFilter, setSorte }) => {
   return (
     <div className="filter">
       <h2>Filtrar:</h2>
       <div className="filter-options">
         <div>
           <p>Status:</p>
-          <select>
+          <select value={filter} onChange={(e) => setFilter(e.target.value)}>
             <option value="All">Todas</option>
             <option value="Completed">Completas</option>
             <option value="Incomplete">Incompletas</option>
@@ -15,8 +15,8 @@ const Filter = () => {
         </div>
         <div>
           <p>Ordem alfabética:</p>
-          <button>Asc</button>
-          <button>Desc</button>
+          <button onClick={() => setSorte("Asc")}>Asc</button>
+          <button onClick={() => setSorte("Desc")}>Desc</button>
         </div>
       </div>
     </div>
